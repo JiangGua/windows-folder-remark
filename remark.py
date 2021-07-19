@@ -74,6 +74,8 @@ def addComment(fpath = None, comment = None):
 if __name__ == '__main__':
     if len(sys.argv) == 3:
         addComment(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) == 2:
+        addComment(sys.argv[1], "已刻录")
     elif len(sys.argv) == 1:
         addComment()
     else:
